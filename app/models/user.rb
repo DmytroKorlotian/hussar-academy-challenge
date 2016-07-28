@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
 
   has_many :questions
   has_many :answers
+  has_many :likes
+  has_many :liked_answers, through: :likes, source: :answer
 
   def to_s
     email
