@@ -18,8 +18,8 @@ Feature: Questions
 
   Scenario: Editing question
     Given There is a question created by another user
-     Then I do not see "Edit" link on this question's page
+     Then I do not see "Edit question" link on this question's page
 
   Scenario: Delete question
     Given There is a question created by another user
-     Then I do not see "Delete" link on this question's page
+     Then I do not see "Delete question" link on this question's page
