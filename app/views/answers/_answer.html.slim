@@ -5,4 +5,8 @@
     = l(answer.created_at, format: :long)
     '  by
     = link_to answer.user, user_path(answer.user)
+    '  | 
+    = answer.likes.count
+    '  likes | 
+    = link_to 'Like', question_answer_likes_path(question_id: answer.question.id, answer_id: answer.id), method: :post
 
